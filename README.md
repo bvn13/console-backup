@@ -3,6 +3,7 @@ Makes backups easy.
 usage:
 
 1) making an alias
+
 alias bup="/PATH/TO/bup.sh"
 
 2) making a new backup
