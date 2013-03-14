@@ -6,13 +6,11 @@ if [ $# -eq 0 ]; then
 fi;
 
 DATE=`date +%Y%m%d`;
-#echo "$DATE";
 
 if [ -f "$1" ]; then
-    #echo "file";
     cp $1 $1.$DATE.bup;
 fi;
 
 if [ -d "$1" ]; then
-    tar -cvzf $1.tar.gz $1;
+    tar -cvzf $1.$DATE.tar.gz $1;
 fi;
