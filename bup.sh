@@ -5,7 +5,7 @@ if [ $# -eq 0 ]; then
     exit;
 fi;
 
-DATE=`date +%Y%m%d`;
+DATE=`date +%Y%m%d-%H%M`;
 
 if [ -f "$1" ]; then
     cp $1 $1.$DATE.bup;
